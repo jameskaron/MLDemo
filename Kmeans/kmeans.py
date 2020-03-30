@@ -249,6 +249,149 @@ for idx,n_clusters in enumerate(n_colors):
 
 
 # 半监督学习
+# 首先，让我们将训练集聚类为50个集群， 然后对于每个聚类，让我们找到最靠近质心的图像。 我们将这些图像称为代表性图像：
+from sklearn.datasets import load_digits
+
+X_digits,y_digits = load_digits(return_X_y = True)
+
+from sklearn.model_selection import train_test_split
+
+X_train,X_test,y_train,y_test = train_test_split(X_digits,y_digits,random_state=42)
+
+print(y_train.shape)
+
+
+from sklearn.linear_model import LogisticRegression
+n_labeled = 50
+
+log_reg = LogisticRegression(random_state=42)
+log_reg.fit(X_train[:n_labeled], y_train[:n_labeled])
+log_reg.score(X_test, y_test)
+
+k = 50
+kmeans = KMeans(n_clusters=k, random_state=42)
+X_digits_dist = kmeans.fit_transform(X_train)
+
+print(X_digits_dist.shape)
+
+representative_digits_idx = np.argmin(X_digits_dist,axis=0)
+print(representative_digits_idx.shape)
+
+X_representative_digits = X_train[representative_digits_idx]
+
+# 现在让我们绘制这些代表性图像并手动标记它们：
+plt.figure(figsize=(8, 2))
+for index, X_representative_digit in enumerate(X_representative_digits):
+    plt.subplot(k // 10, 10, index + 1)
+    plt.imshow(X_representative_digit.reshape(8, 8), cmap="binary", interpolation="bilinear")
+    plt.axis('off')
+
+plt.show()
+
+y_representative_digits = np.array([
+    4, 8, 0, 6, 8, 3, 7, 7, 9, 2,
+    5, 5, 8, 5, 2, 1, 2, 9, 6, 1,
+    1, 6, 9, 0, 8, 3, 0, 7, 4, 1,
+    6, 5, 2, 4, 1, 8, 6, 3, 9, 2,
+    4, 2, 9, 4, 7, 6, 2, 3, 1, 1])
+
+# 现在我们有一个只有50个标记实例的数据集，它们中的每一个都是其集群的代表性图像，而不是完全随机的实例。 让我们看看性能是否更好：
+log_reg = LogisticRegression(random_state=42)
+log_reg.fit(X_representative_digits, y_representative_digits)
+log_reg.score(X_test, y_test)
+
+# 但也许我们可以更进一步：如果我们将标签传播到同一群集中的所有其他实例，该怎么办？
+y_train_propagated = np.empty(len(X_train), dtype=np.int32)
+for i in range(k):
+    y_train_propagated[kmeans.labels_ == i] = y_representative_digits[i]
+
+log_reg = LogisticRegression(random_state=42)
+log_reg.fit(X_train, y_train_propagated)
+
+print(log_reg.score(X_test, y_test))
+
+# 只选择前20个来试试
+percentile_closest = 20
+
+X_cluster_dist = X_digits_dist[np.arange(len(X_train)), kmeans.labels_]
+for i in range(k):
+    in_cluster = (kmeans.labels_ == i)
+    cluster_dist = X_cluster_dist[in_cluster] #选择属于当前簇的所有样本
+    cutoff_distance = np.percentile(cluster_dist, percentile_closest) #排序找到前20个
+    above_cutoff = (X_cluster_dist > cutoff_distance) # False True结果
+    X_cluster_dist[in_cluster & above_cutoff] = -1
+
+partially_propagated = (X_cluster_dist != -1)
+X_train_partially_propagated = X_train[partially_propagated]
+y_train_partially_propagated = y_train_propagated[partially_propagated]
+
+log_reg = LogisticRegression(random_state=42)
+log_reg.fit(X_train_partially_propagated, y_train_partially_propagated)
+
+print(log_reg.score(X_test, y_test))
+
+
+
+# DBSCAN
+from sklearn.datasets import make_moons
+X, y = make_moons(n_samples=1000, noise=0.05, random_state=42)
+plt.plot(X[:,0],X[:,1],'b.')
+
+from sklearn.cluster import DBSCAN
+dbscan = DBSCAN(eps = 0.05,min_samples=5)
+dbscan.fit(X)
+
+# 常用属性
+print(dbscan.labels_[:10])
+
+print(dbscan.core_sample_indices_[:10])
+
+print(np.unique(dbscan.labels_))
+
+dbscan2 = DBSCAN(eps = 0.2,min_samples=5)
+dbscan2.fit(X)
+
+# 画图
+def plot_dbscan(dbscan, X, size, show_xlabels=True, show_ylabels=True):
+    core_mask = np.zeros_like(dbscan.labels_, dtype=bool)
+    core_mask[dbscan.core_sample_indices_] = True
+    anomalies_mask = dbscan.labels_ == -1
+    non_core_mask = ~(core_mask | anomalies_mask)
+
+    cores = dbscan.components_
+    anomalies = X[anomalies_mask]
+    non_cores = X[non_core_mask]
+
+    plt.scatter(cores[:, 0], cores[:, 1],
+                c=dbscan.labels_[core_mask], marker='o', s=size, cmap="Paired")
+    plt.scatter(cores[:, 0], cores[:, 1], marker='*', s=20, c=dbscan.labels_[core_mask])
+    plt.scatter(anomalies[:, 0], anomalies[:, 1],
+                c="r", marker="x", s=100)
+    plt.scatter(non_cores[:, 0], non_cores[:, 1], c=dbscan.labels_[non_core_mask], marker=".")
+    if show_xlabels:
+        plt.xlabel("$x_1$", fontsize=14)
+    else:
+        plt.tick_params(labelbottom='off')
+    if show_ylabels:
+        plt.ylabel("$x_2$", fontsize=14, rotation=0)
+    else:
+        plt.tick_params(labelleft='off')
+    plt.title("eps={:.2f}, min_samples={}".format(dbscan.eps, dbscan.min_samples), fontsize=14)
+
+plt.figure(figsize=(9, 3.2))
+
+plt.subplot(121)
+plot_dbscan(dbscan, X, size=100)
+
+plt.subplot(122)
+plot_dbscan(dbscan2, X, size=600, show_ylabels=False)
+
+plt.show()
+
+
+
+
+
 
 
 

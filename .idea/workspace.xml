@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fe1912a-8cd8-47c5-8b9d-71e63e3bedfd" name="Default Changelist" comment="" />
+    <list default="true" id="9fe1912a-8cd8-47c5-8b9d-71e63e3bedfd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kmeans/kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kmeans/kmeans.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +17,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XqD7mCHZdCR1YIhXb4C7cqC8iJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -213,7 +220,11 @@
       <workItem from="1585149280255" duration="1644000" />
       <workItem from="1585219509614" duration="601000" />
       <workItem from="1585222577475" duration="1092000" />
-      <workItem from="1585231469139" duration="722000" />
+      <workItem from="1585231469139" duration="1419000" />
+      <workItem from="1585282130399" duration="279000" />
+      <workItem from="1585307535680" duration="600000" />
+      <workItem from="1585488819975" duration="2014000" />
+      <workItem from="1585542552705" duration="4620000" />
     </task>
     <servers />
   </component>
@@ -266,10 +277,10 @@
     <state x="221" y="79" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1583294919853" />
     <state x="221" y="79" key="SettingsEditor/0.23.1440.837@0.23.1440.837" timestamp="1582358923399" />
     <state x="221" y="79" key="SettingsEditor/0.23.1440.838@0.23.1440.838" timestamp="1582449587957" />
-    <state x="397" y="271" key="com.intellij.ide.util.TipDialog" timestamp="1585231469123">
+    <state x="397" y="271" key="com.intellij.ide.util.TipDialog" timestamp="1585307535744">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="397" y="271" key="com.intellij.ide.util.TipDialog/0.23.1440.834@0.23.1440.834" timestamp="1585222844765" />
+    <state x="397" y="271" key="com.intellij.ide.util.TipDialog/0.23.1440.834@0.23.1440.834" timestamp="1585307535744" />
     <state x="397" y="271" key="com.intellij.ide.util.TipDialog/0.23.1440.835@0.23.1440.835" timestamp="1583295008268" />
     <state x="397" y="271" key="com.intellij.ide.util.TipDialog/0.23.1440.837@0.23.1440.837" timestamp="1583228033709" />
     <state x="397" y="272" key="com.intellij.ide.util.TipDialog/0.23.1440.838@0.23.1440.838" timestamp="1582360644594" />

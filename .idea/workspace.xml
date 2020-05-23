@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fe1912a-8cd8-47c5-8b9d-71e63e3bedfd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SVM/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SVM/svm_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RegressionAnalysis/Regression.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RegressionAnalysis/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Word2Vec/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Word2Vec/kaggle_word2vec.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +41,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -52,7 +53,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -65,7 +66,7 @@
       <recent name="$PROJECT_DIR$/test_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.news_cut">
+  <component name="RunManager" selected="Python.Regression">
     <configuration name="KNN_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MLDemo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,6 +81,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_1/KNN_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Regression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MLDemo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RegressionAnalysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RegressionAnalysis/Regression.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -178,24 +198,13 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Regression" />
         <item itemvalue="Python.news_cut" />
         <item itemvalue="Python.KNN_test" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.StackDemo" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SshConsoleOptionsProvider">
     <option name="myEncoding" value="UTF-8" />
@@ -253,7 +262,13 @@
       <workItem from="1587308014432" duration="538000" />
       <workItem from="1587400933848" duration="439000" />
       <workItem from="1587469196852" duration="451000" />
-      <workItem from="1587744367002" duration="520000" />
+      <workItem from="1587744367002" duration="788000" />
+      <workItem from="1588050576041" duration="306000" />
+      <workItem from="1589858964248" duration="2906000" />
+      <workItem from="1590120782206" duration="1170000" />
+      <workItem from="1590126693283" duration="287000" />
+      <workItem from="1590228150575" duration="281000" />
+      <workItem from="1590231176029" duration="221000" />
     </task>
     <task id="LOCAL-00001" summary="Kmeans">
       <created>1585556831560</created>
@@ -262,15 +277,23 @@
       <option name="project" value="LOCAL" />
       <updated>1585556831560</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="SVM">
+      <created>1587745700365</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587745700365</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Kmeans" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kmeans" />
+    <MESSAGE value="SVM" />
+    <option name="LAST_COMMIT_MESSAGE" value="SVM" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="105" key="#Notifications" timestamp="1586104256699">
@@ -283,10 +306,11 @@
     <state x="408" y="182" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.835@0.23.1440.835" timestamp="1582953430437" />
     <state x="408" y="183" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.837@0.23.1440.837" timestamp="1581782046583" />
     <state x="408" y="182" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1440.23.960.745/0.23.1440.834@0.23.1440.834" timestamp="1582701492456" />
-    <state x="218" y="42" key="CommitChangelistDialog2" timestamp="1585556831091">
-      <screen x="0" y="23" width="1440" height="834" />
+    <state x="218" y="42" key="CommitChangelistDialog2" timestamp="1587745700006">
+      <screen x="0" y="23" width="1440" height="836" />
     </state>
     <state x="218" y="42" key="CommitChangelistDialog2/0.23.1440.834@0.23.1440.834" timestamp="1585556831091" />
+    <state x="218" y="42" key="CommitChangelistDialog2/0.23.1440.836@0.23.1440.836" timestamp="1587745700006" />
     <state width="1396" height="268" key="GridCell.Tab.0.bottom" timestamp="1583060001259">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
@@ -319,26 +343,27 @@
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state width="1396" height="268" key="GridCell.Tab.1.right/0.23.1440.835@0.23.1440.835" timestamp="1583060001260" />
-    <state x="221" y="79" key="SettingsEditor" timestamp="1587307997511">
-      <screen x="0" y="23" width="1440" height="836" />
+    <state x="221" y="79" key="SettingsEditor" timestamp="1590231400169">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="221" y="79" key="SettingsEditor/0.23.1440.834@0.23.1440.834" timestamp="1582020014746" />
+    <state x="221" y="79" key="SettingsEditor/0.23.1440.834@0.23.1440.834" timestamp="1590231400169" />
     <state x="221" y="79" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1583294919853" />
     <state x="221" y="79" key="SettingsEditor/0.23.1440.836@0.23.1440.836" timestamp="1587307997511" />
     <state x="221" y="79" key="SettingsEditor/0.23.1440.837@0.23.1440.837" timestamp="1586847235095" />
     <state x="221" y="79" key="SettingsEditor/0.23.1440.838@0.23.1440.838" timestamp="1582449587957" />
-    <state x="320" y="180" key="Vcs.Push.Dialog.v2" timestamp="1585556834272">
-      <screen x="0" y="23" width="1440" height="834" />
+    <state x="320" y="180" key="Vcs.Push.Dialog.v2" timestamp="1587745703389">
+      <screen x="0" y="23" width="1440" height="836" />
     </state>
     <state x="320" y="180" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1585556834272" />
-    <state x="397" y="272" key="com.intellij.ide.util.TipDialog" timestamp="1587744373286">
-      <screen x="0" y="23" width="1440" height="836" />
+    <state x="320" y="180" key="Vcs.Push.Dialog.v2/0.23.1440.836@0.23.1440.836" timestamp="1587745703389" />
+    <state x="397" y="271" key="com.intellij.ide.util.TipDialog" timestamp="1589858980053">
+      <screen x="0" y="23" width="1440" height="837" />
     </state>
     <state x="397" y="271" key="com.intellij.ide.util.TipDialog/0.23.1440.834@0.23.1440.834" timestamp="1586103859690" />
     <state x="397" y="271" key="com.intellij.ide.util.TipDialog/0.23.1440.835@0.23.1440.835" timestamp="1587400932924" />
     <state x="397" y="272" key="com.intellij.ide.util.TipDialog/0.23.1440.836@0.23.1440.836" timestamp="1587744373286" />
-    <state x="397" y="271" key="com.intellij.ide.util.TipDialog/0.23.1440.837@0.23.1440.837" timestamp="1587469196806" />
-    <state x="397" y="272" key="com.intellij.ide.util.TipDialog/0.23.1440.838@0.23.1440.838" timestamp="1582360644594" />
+    <state x="397" y="271" key="com.intellij.ide.util.TipDialog/0.23.1440.837@0.23.1440.837" timestamp="1589858980053" />
+    <state x="397" y="272" key="com.intellij.ide.util.TipDialog/0.23.1440.838@0.23.1440.838" timestamp="1588050874010" />
     <state x="397" y="271" key="com.intellij.ide.util.TipDialog/1440.23.960.745/0.23.1440.834@0.23.1440.834" timestamp="1585231469123" />
   </component>
   <component name="XDebuggerManager">

@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fe1912a-8cd8-47c5-8b9d-71e63e3bedfd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RegressionAnalysis/Regression.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RegressionAnalysis/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Word2Vec/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Word2Vec/kaggle_word2vec.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature_engineering/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature_engineering/number_feature.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature_engineering/text_feature.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegressionAnalysis/Regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/RegressionAnalysis/Regression.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +66,7 @@
       <recent name="$PROJECT_DIR$/test_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Regression">
+  <component name="RunManager" selected="Python.text_feature">
     <configuration name="KNN_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MLDemo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -93,6 +93,9 @@
       <module name="MLDemo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RegressionAnalysis" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -100,28 +103,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RegressionAnalysis/Regression.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="StackDemo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="MLDemo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/StackDemo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -196,13 +177,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="text_feature" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MLDemo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/feature_engineering" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/feature_engineering/text_feature.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.text_feature" />
         <item itemvalue="Python.Regression" />
         <item itemvalue="Python.news_cut" />
         <item itemvalue="Python.KNN_test" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.StackDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +271,21 @@
       <workItem from="1590120782206" duration="1170000" />
       <workItem from="1590126693283" duration="287000" />
       <workItem from="1590228150575" duration="281000" />
-      <workItem from="1590231176029" duration="221000" />
+      <workItem from="1590231176029" duration="541000" />
+      <workItem from="1590390987197" duration="2072000" />
+      <workItem from="1590557907622" duration="66000" />
+      <workItem from="1590643572591" duration="614000" />
+      <workItem from="1590677144510" duration="28000" />
+      <workItem from="1590729155091" duration="1054000" />
+      <workItem from="1590945567216" duration="12000" />
+      <workItem from="1591078751006" duration="1411000" />
+      <workItem from="1591158872896" duration="128000" />
+      <workItem from="1591256785345" duration="63000" />
+      <workItem from="1591256916684" duration="540000" />
+      <workItem from="1591322856747" duration="631000" />
+      <workItem from="1591423579098" duration="62000" />
+      <workItem from="1591592257518" duration="101000" />
+      <workItem from="1591592365593" duration="655000" />
     </task>
     <task id="LOCAL-00001" summary="Kmeans">
       <created>1585556831560</created>
@@ -284,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587745700365</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="基于历史各项数据预计未来三个月销售额情况 - 1">
+      <created>1590231704979</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590231704979</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +317,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Kmeans" />
     <MESSAGE value="SVM" />
-    <option name="LAST_COMMIT_MESSAGE" value="SVM" />
+    <MESSAGE value="基于历史各项数据预计未来三个月销售额情况 - 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="基于历史各项数据预计未来三个月销售额情况 - 1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="105" key="#Notifications" timestamp="1586104256699">
@@ -304,12 +329,11 @@
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="408" y="182" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.835@0.23.1440.835" timestamp="1582953430437" />
-    <state x="408" y="183" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.837@0.23.1440.837" timestamp="1581782046583" />
     <state x="408" y="182" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1440.23.960.745/0.23.1440.834@0.23.1440.834" timestamp="1582701492456" />
-    <state x="218" y="42" key="CommitChangelistDialog2" timestamp="1587745700006">
-      <screen x="0" y="23" width="1440" height="836" />
+    <state x="218" y="23" width="1004" height="834" key="CommitChangelistDialog2" timestamp="1590231704645">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="218" y="42" key="CommitChangelistDialog2/0.23.1440.834@0.23.1440.834" timestamp="1585556831091" />
+    <state x="218" y="23" width="1004" height="834" key="CommitChangelistDialog2/0.23.1440.834@0.23.1440.834" timestamp="1590231704645" />
     <state x="218" y="42" key="CommitChangelistDialog2/0.23.1440.836@0.23.1440.836" timestamp="1587745700006" />
     <state width="1396" height="268" key="GridCell.Tab.0.bottom" timestamp="1583060001259">
       <screen x="0" y="23" width="1440" height="835" />
@@ -343,18 +367,17 @@
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state width="1396" height="268" key="GridCell.Tab.1.right/0.23.1440.835@0.23.1440.835" timestamp="1583060001260" />
-    <state x="221" y="79" key="SettingsEditor" timestamp="1590231400169">
+    <state x="221" y="79" key="SettingsEditor" timestamp="1591257576256">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="221" y="79" key="SettingsEditor/0.23.1440.834@0.23.1440.834" timestamp="1590231400169" />
+    <state x="221" y="79" key="SettingsEditor/0.23.1440.834@0.23.1440.834" timestamp="1591257576256" />
     <state x="221" y="79" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1583294919853" />
     <state x="221" y="79" key="SettingsEditor/0.23.1440.836@0.23.1440.836" timestamp="1587307997511" />
     <state x="221" y="79" key="SettingsEditor/0.23.1440.837@0.23.1440.837" timestamp="1586847235095" />
-    <state x="221" y="79" key="SettingsEditor/0.23.1440.838@0.23.1440.838" timestamp="1582449587957" />
-    <state x="320" y="180" key="Vcs.Push.Dialog.v2" timestamp="1587745703389">
-      <screen x="0" y="23" width="1440" height="836" />
+    <state x="320" y="180" key="Vcs.Push.Dialog.v2" timestamp="1590231707748">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="320" y="180" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1585556834272" />
+    <state x="320" y="180" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1590231707748" />
     <state x="320" y="180" key="Vcs.Push.Dialog.v2/0.23.1440.836@0.23.1440.836" timestamp="1587745703389" />
     <state x="397" y="271" key="com.intellij.ide.util.TipDialog" timestamp="1589858980053">
       <screen x="0" y="23" width="1440" height="837" />
@@ -365,6 +388,10 @@
     <state x="397" y="271" key="com.intellij.ide.util.TipDialog/0.23.1440.837@0.23.1440.837" timestamp="1589858980053" />
     <state x="397" y="272" key="com.intellij.ide.util.TipDialog/0.23.1440.838@0.23.1440.838" timestamp="1588050874010" />
     <state x="397" y="271" key="com.intellij.ide.util.TipDialog/1440.23.960.745/0.23.1440.834@0.23.1440.834" timestamp="1585231469123" />
+    <state x="385" y="181" width="670" height="676" key="search.everywhere.popup" timestamp="1591322945611">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state x="385" y="181" width="670" height="676" key="search.everywhere.popup/0.23.1440.834@0.23.1440.834" timestamp="1591322945611" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

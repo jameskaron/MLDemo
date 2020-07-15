@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fe1912a-8cd8-47c5-8b9d-71e63e3bedfd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Xgboost/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Xgboost/xgboost_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PCA/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PCA/pca.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature_engineering/image_feature.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_engineering/image_feature.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +298,18 @@
       <workItem from="1593337263023" duration="513000" />
       <workItem from="1593342829183" duration="801000" />
       <workItem from="1593426677323" duration="450000" />
-      <workItem from="1593492366719" duration="586000" />
+      <workItem from="1593492366719" duration="925000" />
+      <workItem from="1593531392090" duration="107000" />
+      <workItem from="1593591708166" duration="121000" />
+      <workItem from="1593687327879" duration="27000" />
+      <workItem from="1594309045158" duration="359000" />
+      <workItem from="1594309644201" duration="410000" />
+      <workItem from="1594373333477" duration="634000" />
+      <workItem from="1594529273283" duration="436000" />
+      <workItem from="1594543030650" duration="302000" />
+      <workItem from="1594544136274" duration="70000" />
+      <workItem from="1594544234072" duration="563000" />
+      <workItem from="1594549561686" duration="34000" />
     </task>
     <task id="LOCAL-00001" summary="Kmeans">
       <created>1585556831560</created>
@@ -329,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591674146606</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Xgboost调参">
+      <created>1593494180522</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1593494180522</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,30 +357,31 @@
     <MESSAGE value="SVM" />
     <MESSAGE value="基于历史各项数据预计未来三个月销售额情况 - 1" />
     <MESSAGE value="特征工程" />
-    <option name="LAST_COMMIT_MESSAGE" value="特征工程" />
+    <MESSAGE value="Xgboost调参" />
+    <option name="LAST_COMMIT_MESSAGE" value="Xgboost调参" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="105" key="#Notifications" timestamp="1586104256699">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="320" y="105" key="#Notifications/0.23.1440.834@0.23.1440.834" timestamp="1586104256699" />
-    <state x="218" y="23" width="1004" height="834" key="CommitChangelistDialog2" timestamp="1591674146213">
-      <screen x="0" y="23" width="1440" height="834" />
+    <state x="218" y="23" width="1004" height="834" key="CommitChangelistDialog2" timestamp="1593494179998">
+      <screen x="0" y="23" width="1440" height="836" />
     </state>
     <state x="218" y="23" width="1004" height="834" key="CommitChangelistDialog2/0.23.1440.834@0.23.1440.834" timestamp="1591674146213" />
-    <state x="218" y="42" key="CommitChangelistDialog2/0.23.1440.836@0.23.1440.836" timestamp="1587745700006" />
-    <state x="221" y="79" key="SettingsEditor" timestamp="1593493995890">
-      <screen x="0" y="23" width="1440" height="836" />
+    <state x="218" y="23" key="CommitChangelistDialog2/0.23.1440.836@0.23.1440.836" timestamp="1593494179998" />
+    <state x="221" y="79" key="SettingsEditor" timestamp="1593591822570">
+      <screen x="0" y="23" width="1440" height="837" />
     </state>
     <state x="221" y="79" key="SettingsEditor/0.23.1440.834@0.23.1440.834" timestamp="1591257576256" />
     <state x="221" y="79" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1592285440831" />
-    <state x="221" y="79" key="SettingsEditor/0.23.1440.836@0.23.1440.836" timestamp="1593493995890" />
-    <state x="221" y="79" key="SettingsEditor/0.23.1440.837@0.23.1440.837" timestamp="1586847235095" />
-    <state x="320" y="180" key="Vcs.Push.Dialog.v2" timestamp="1591675001576">
-      <screen x="0" y="23" width="1440" height="834" />
+    <state x="221" y="79" key="SettingsEditor/0.23.1440.836@0.23.1440.836" timestamp="1593531458868" />
+    <state x="221" y="79" key="SettingsEditor/0.23.1440.837@0.23.1440.837" timestamp="1593591822570" />
+    <state x="320" y="180" key="Vcs.Push.Dialog.v2" timestamp="1593494320733">
+      <screen x="0" y="23" width="1440" height="836" />
     </state>
     <state x="320" y="180" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1591675001576" />
-    <state x="320" y="180" key="Vcs.Push.Dialog.v2/0.23.1440.836@0.23.1440.836" timestamp="1587745703389" />
+    <state x="320" y="180" key="Vcs.Push.Dialog.v2/0.23.1440.836@0.23.1440.836" timestamp="1593494320733" />
     <state x="397" y="271" key="com.intellij.ide.util.TipDialog" timestamp="1589858980053">
       <screen x="0" y="23" width="1440" height="837" />
     </state>
@@ -373,14 +391,19 @@
     <state x="397" y="271" key="com.intellij.ide.util.TipDialog/0.23.1440.837@0.23.1440.837" timestamp="1589858980053" />
     <state x="397" y="272" key="com.intellij.ide.util.TipDialog/0.23.1440.838@0.23.1440.838" timestamp="1588050874010" />
     <state x="397" y="271" key="com.intellij.ide.util.TipDialog/1440.23.960.745/0.23.1440.834@0.23.1440.834" timestamp="1585231469123" />
+    <state x="508" y="361" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593494205790">
+      <screen x="0" y="23" width="1440" height="836" />
+    </state>
+    <state x="508" y="361" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.836@0.23.1440.836" timestamp="1593494205790" />
     <state x="421" y="73" width="598" height="735" key="find.popup" timestamp="1592285518855">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="421" y="73" width="598" height="735" key="find.popup/0.23.1440.835@0.23.1440.835" timestamp="1592285518855" />
-    <state x="385" y="181" width="670" height="676" key="search.everywhere.popup" timestamp="1593337444059">
-      <screen x="0" y="23" width="1440" height="834" />
+    <state x="385" y="181" width="670" height="678" key="search.everywhere.popup" timestamp="1593494012690">
+      <screen x="0" y="23" width="1440" height="836" />
     </state>
     <state x="385" y="181" width="670" height="676" key="search.everywhere.popup/0.23.1440.834@0.23.1440.834" timestamp="1593337444059" />
+    <state x="385" y="181" width="670" height="678" key="search.everywhere.popup/0.23.1440.836@0.23.1440.836" timestamp="1593494012690" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

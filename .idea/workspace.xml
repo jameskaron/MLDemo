@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fe1912a-8cd8-47c5-8b9d-71e63e3bedfd" name="Default Changelist" comment="Add LDA">
+    <list default="true" id="9fe1912a-8cd8-47c5-8b9d-71e63e3bedfd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LDA/lda.py" beforeDir="false" afterPath="$PROJECT_DIR$/LDA/lda.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,7 +309,7 @@
       <workItem from="1594544234072" duration="563000" />
       <workItem from="1594549561686" duration="34000" />
       <workItem from="1594805044923" duration="168000" />
-      <workItem from="1595265732589" duration="4037000" />
+      <workItem from="1595265732589" duration="4134000" />
     </task>
     <task id="LOCAL-00001" summary="Kmeans">
       <created>1585556831560</created>
@@ -354,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594805097920</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add LDA">
+      <created>1595345519180</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1595345519181</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,27 +373,29 @@
     <MESSAGE value="特征工程" />
     <MESSAGE value="Xgboost调参" />
     <MESSAGE value="Add PCA" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add PCA" />
+    <MESSAGE value="Add LDA" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add LDA" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="218" y="23" width="1004" height="834" key="CommitChangelistDialog2" timestamp="1595342762913">
+    <state x="218" y="23" width="1004" height="837" key="CommitChangelistDialog2" timestamp="1595345518713">
       <screen x="0" y="23" width="1440" height="837" />
     </state>
     <state x="218" y="23" width="1004" height="834" key="CommitChangelistDialog2/0.23.1440.834@0.23.1440.834" timestamp="1591674146213" />
     <state x="218" y="23" key="CommitChangelistDialog2/0.23.1440.836@0.23.1440.836" timestamp="1594805097515" />
-    <state x="218" y="23" key="CommitChangelistDialog2/0.23.1440.837@0.23.1440.837" timestamp="1595342762913" />
-    <state x="221" y="79" key="SettingsEditor" timestamp="1595345506345">
+    <state x="218" y="23" width="1004" height="837" key="CommitChangelistDialog2/0.23.1440.837@0.23.1440.837" timestamp="1595345518713" />
+    <state x="221" y="79" key="SettingsEditor" timestamp="1595345615625">
       <screen x="0" y="23" width="1440" height="837" />
     </state>
     <state x="221" y="79" key="SettingsEditor/0.23.1440.834@0.23.1440.834" timestamp="1591257576256" />
     <state x="221" y="79" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1592285440831" />
     <state x="221" y="79" key="SettingsEditor/0.23.1440.836@0.23.1440.836" timestamp="1593531458868" />
-    <state x="221" y="79" key="SettingsEditor/0.23.1440.837@0.23.1440.837" timestamp="1595345506345" />
-    <state x="320" y="180" key="Vcs.Push.Dialog.v2" timestamp="1594805100078">
-      <screen x="0" y="23" width="1440" height="836" />
+    <state x="221" y="79" key="SettingsEditor/0.23.1440.837@0.23.1440.837" timestamp="1595345615625" />
+    <state x="320" y="180" key="Vcs.Push.Dialog.v2" timestamp="1595345522455">
+      <screen x="0" y="23" width="1440" height="837" />
     </state>
     <state x="320" y="180" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1591675001576" />
     <state x="320" y="180" key="Vcs.Push.Dialog.v2/0.23.1440.836@0.23.1440.836" timestamp="1594805100078" />
+    <state x="320" y="180" key="Vcs.Push.Dialog.v2/0.23.1440.837@0.23.1440.837" timestamp="1595345522455" />
     <state x="397" y="271" key="com.intellij.ide.util.TipDialog" timestamp="1589858980053">
       <screen x="0" y="23" width="1440" height="837" />
     </state>
